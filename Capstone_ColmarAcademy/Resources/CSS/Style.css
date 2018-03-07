@@ -1,0 +1,448 @@
+html{
+  font-size: 16px;
+}
+.left-column{
+ width: 60%;
+ padding: 32px 24px;
+ }
+ .left-column img{
+  width: 100%;
+}
+ .right-column{
+  width: 40%;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+.text h1{
+  font-family: "Garamond", "Times", serif;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  font-size: 2.75rem;
+  padding-bottom: 20px;
+}
+.text h4{
+  color: rgb(76, 76, 77);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.text p{
+  padding-top: 8px;
+  font-family: "Garamond", "Times", serif;
+  color: grey;
+  font-weight: bold;
+  line-height: 25px;
+}
+.data{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+}
+.data img{
+  height: auto;
+  width: 35%;
+  min-height: 125px;
+  min-width: 125px;
+}
+.data .text{
+  width: 65%;
+  padding-left: 16px;
+}
+@media only screen and (max-width: 700px){
+.data img{
+    display: none;
+  }
+}
+/* HEADER*/
+
+header{
+  display: flex;
+  height: 64px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logotype{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 24px;
+}
+header .logotype img{
+  height: 32px;
+}
+header .logotype h1{
+  color: grey;
+  font-weight:900;
+  font-family: "Garamond", "Times", serif;
+  font-size: 1.25rem;
+}
+header .logotype h1:last-child{
+  font-weight: 100;
+}
+header .desktop{
+  display: flex;
+  flex-direction: row;
+  font-family: "Garamond", "Times", serif;
+  font-size: 1.25rem;
+  padding-right: 16px;
+  align-items: center;
+}
+header .desktop span{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+header .desktop a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+header .mobile{
+  display: none;
+}
+@media only screen and (max-width: 630px){
+  header .desktop{
+    display: none;
+  }
+  header .logotype{
+    display: none;
+  }
+  header .mobile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
+
+/* BANNER */
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(213, 213, 213);
+  align-items: center;
+  justify-content: center;
+}
+.banner-info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.text h1{
+  font-family: "Garamond", "Times", serif;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  font-size: 2.75rem;
+  padding-bottom: 20px;
+}
+.banner .text p{
+  font-family: "Garamond", "Times", serif;
+  color: rgb(76, 76, 77);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.banner .start{
+  display: flex;
+  background-color: rgb(80, 78, 84);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  width: auto;
+  margin-right: 24px;
+  color: white;
+}
+.banner .start p{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.banner .start:hover{
+  background-color: rgb(48, 48, 48);
+  color: black;
+}
+@media only screen and (max-width: 630px){
+  .banner{
+    flex-direction: column;
+  }
+  .banner .left-column, .banner .right-column{
+    width: 100%;
+    padding: 0;
+  }
+  .banner .text{
+   margin-left: 16px;
+   margin-right: 16px;
+  }
+  .banner .start{
+   width: auto;
+   margin-left: 16px;
+   margin-right: 16px;
+   padding-right: 0px;
+  }
+}
+  /* INFORMATION */
+
+  .information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(244, 244, 244);
+  }
+  .information .left-column{
+    padding-bottom: 0px;
+  }
+  .main-information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-information .text{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .main-information .text p{
+    font-family: "cobert", sans-serif;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 100;
+    padding-bottom: 24px;
+  }
+  .main-information .text p:last-child{
+    font-family: "cobert", sans-serif;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: rgb(76, 76, 77);
+    padding-bottom: 0px;
+  }
+  .information .right-column{
+    border-left: 1px solid;
+    border-left-color: rgb(201, 200, 200);
+  }
+  .information .data-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+  }
+  .information .data-container .data:first-child{
+    padding-top: 0;
+    border-bottom: 5px solid;
+    border-bottom-color: rgb(217, 216, 216);
+  }
+  .information .data-container .data:last-child{
+    background-color: rgb(217, 216, 216);
+  }
+  .information .data .text a:last-child{
+    color: blue;
+  }
+  .information .data .text a:last-child:hover{
+    color: red;
+  }
+  @media only screen and (max-width: 630px){
+    .information .left-column{
+      display: none;
+    }
+    .information .right-column{
+      width: 100%;
+    }
+    .information .data-container{
+      flex-direction: column;
+    }
+    .information .data{
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .information .data-container .data:first-child{
+      border-bottom: 0;
+    }
+    .information .data-container .data:last-child{
+      background-color: rgb(244, 244, 244);
+    }
+    .information .data img{
+      display: block;
+      width: auto;
+      padding-bottom: 32px;
+    }
+
+  }
+  /* COURSES */
+
+  .courses{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 216, 216);
+  }
+
+  .courses h1{
+    font-family: "Garamond", "Times", serif;
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    font-size: 2.75rem;
+    padding-top: 32px;
+    padding-bottom: 18px;
+  }
+  .courses .courses-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 32px 54px;
+  }
+  .courses .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-right: 18px;
+    margin-left: 18px;
+    width: 30%;
+    background-color: white;
+  }
+ .courses .box img{
+   width: 100%;
+   height: auto;
+   padding-bottom: 16px;
+ }
+ .courses .box p{
+   font-weight: normal;
+ }
+ .courses .text{
+   padding-bottom: 24px;
+ }
+@media only screen and (max-width: 630px){
+  .courses {
+    background-color: rgb(244, 244, 244);
+    align-items: flex-start;
+    border-bottom: 1px solid;
+    border-bottom-color: rgb(201, 200, 200);
+    border-top: 1px solid;
+    border-top-color: rgb(201, 200, 200);
+    padding-top: 32px;
+  }
+  .courses h1{
+    padding-top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .courses .courses-container{
+    flex-direction: column;
+    padding-top: 0px;
+    width: 93%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .courses .box{
+    width: 100%;
+    background-color: rgb(217, 216, 216);
+    margin-bottom: 8px;
+  }
+  .courses .box h4{
+    padding-top: 16px;
+  }
+  .courses .box img{
+    display: none;
+  }
+  .courses .box p{
+    display: none;
+  }
+}
+
+/* THESIS */
+
+.thesis{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.thesis .title{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(244, 244, 244);
+}
+.thesis .title h1{
+  font-family: "Garamond", "Times", serif;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  font-size: 2.75rem;
+  padding-top: 32px;
+  padding-bottom: 18px;
+}
+.thesis .thesis-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(244, 244, 244);
+}
+.thesis .left-column h4{
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.thesis .left-column p{
+  margin-bottom: 32px;
+}
+.thesis .right-column{
+  padding-top: 32px;
+}
+.thesis .data:first-child{
+  background-color: rgb(217, 216, 216);
+}
+@media only screen and (max-width: 630px){
+  .thesis .left-column{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .thesis .left-column .text{
+    display: none;
+  }
+  .thesis .right-column{
+    display: none;
+  }
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(244, 244, 244);
+  font-family: "cobert", sans-serif;
+  font-size: 0.75rem;
+  color: grey;
+  font-weight: 100;
+  padding: 16px 24px;
+  border-top: 1px solid;
+  border-top-color: rgb(201, 200, 200);
+}
+footer a{
+  font-family: "cobert", sans-serif;
+  font-size: 0.75rem;
+  color: grey;
+  font-weight: 100;
+}
+footer a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 630px){
+  footer{
+    border-top: 0;
+  }
+  footer .terms-privacy{
+    display: none;
+  }
+}
